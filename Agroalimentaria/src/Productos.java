@@ -1,28 +1,28 @@
 
 public class Productos {
 
-	protected String fecha_Caducidad;
-	protected String numerolote;
+	protected String fechaCaducidad;
+	public String numeroLote;
 
 	public Productos() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public String getFecha_Caducidad() {
-		return fecha_Caducidad;
+	public String getNumeroLote() {
+		return numeroLote;
 	}
 
-	public void setFecha_Caducidad(String fecha_Caducidad) {
-		this.fecha_Caducidad = fecha_Caducidad;
+	public void setNumeroLote(String numeroLote) {
+		this.numeroLote = numeroLote;
 	}
 
-	public String getNumerolote() {
-		return numerolote;
+	public String getFechaCaducidad() {
+		return fechaCaducidad;
 	}
 
-	public void setNumerolote(String numerolote) {
-		this.numerolote = numerolote;
+	public void setFechaCaducidad(String fechaCaducidad) {
+		this.fechaCaducidad = fechaCaducidad;
 	}
 
 }
