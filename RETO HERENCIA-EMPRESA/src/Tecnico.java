@@ -25,7 +25,13 @@ public class Tecnico extends Operario {
 	}
 
 	public String quiensoy() {
-		return "Técnico";
+		quienSoy = "Tecnico";
+		return quienSoy;
 	}
-
+	
+	public String getData() {
+		String ret = "";
+		ret += super.getData() + " - " + numobra + " - " + salarioFinal + " - " + quienSoy;
+		return ret;
+	}
 }

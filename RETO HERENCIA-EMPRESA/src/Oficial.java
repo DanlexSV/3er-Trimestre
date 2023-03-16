@@ -24,7 +24,15 @@ public class Oficial extends Operario {
 		double resultado = salario + sobresueldo;
 		return resultado;
 	}
-	public String quiensoy( ) {
-		return "Oficial";
+
+	public String quiensoy() {
+		quienSoy = "Oficial";
+		return quienSoy;
+	}
+	
+	public String getData() {
+		String ret = "";
+		ret += super.getData() + " - " + numobra + " - " + salarioFinal + " - " + quienSoy;
+		return ret;
 	}
 }

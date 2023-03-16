@@ -1,8 +1,8 @@
 
 public class Empleados {
 	protected String nombre, DNI;
-	protected double salario;
-
+	protected double salario, salarioFinal;
+	
 	public Empleados() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -39,4 +39,17 @@ public class Empleados {
 		this.salario = salario;
 	}
 
+	public double getSalarioFinal() {
+		return salarioFinal;
+	}
+
+	public void setSalarioFinal(double salarioFinal) {
+		this.salarioFinal = salarioFinal;
+	}
+	
+	public String getData() {
+		String ret = "";
+		ret += nombre + " - " + DNI + " - " + salario;
+		return ret;
+	}
 }

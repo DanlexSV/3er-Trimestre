@@ -1,6 +1,7 @@
 
 public class Operario extends Empleados {
-	private int numobra;
+	protected int numobra;
+	protected String quienSoy;
 
 	public Operario() {
 		super();
@@ -19,5 +20,12 @@ public class Operario extends Empleados {
 	public void setNumobra(int numobra) {
 		this.numobra = numobra;
 	}
-	
+
+	public String getQuienSoy() {
+		return quienSoy;
+	}
+
+	public void setQuienSoy(String quienSoy) {
+		this.quienSoy = quienSoy;
+	}
 }

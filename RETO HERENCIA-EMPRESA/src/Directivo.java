@@ -25,4 +25,10 @@ public class Directivo extends Empleados {
 		calculo = salario + plus;
 		return calculo;
 	}
+	
+	public String getData() {
+		String ret = "";
+		ret += super.getData() + " - " + plus + " - " + salarioFinal;
+		return ret;
+	}
 }
