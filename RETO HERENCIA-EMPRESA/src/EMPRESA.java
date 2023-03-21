@@ -17,7 +17,7 @@ public class EMPRESA {
 				Utilidades util = new Utilidades();
 				Gestionfichero gf = new Gestionfichero();
 				ArrayList<Directivo> FicheroDirectivo = new ArrayList<Directivo>();
-				nombreFichero = JOptionPane.showInputDialog("Escribe el Nombre de el fichero de Directivo");
+				nombreFichero = JOptionPane.showInputDialog("Escribe el Nombre de el fichero del Directivo");
 				util.AltaDirectivo(nombreFichero);
 				FicheroDirectivo = gf.leerFicheroDirectivo(nombreFichero);
 				util.printarDirectivo(FicheroDirectivo);
@@ -26,7 +26,7 @@ public class EMPRESA {
 				Utilidades ut = new Utilidades();
 				Gestionfichero gF = new Gestionfichero();
 				ArrayList<Tecnico> FicheroTecnico = new ArrayList<Tecnico>();
-				nombreFichero = JOptionPane.showInputDialog("Escribe el Nombre de el fichero de Directivo");
+				nombreFichero = JOptionPane.showInputDialog("Escribe el Nombre de el fichero del Tecnico");
 				ut.AltaTecnico(nombreFichero);
 				FicheroTecnico = gF.leerFicheroTecnico(nombreFichero);
 				ut.printarTecnico(FicheroTecnico);
@@ -34,7 +34,7 @@ public class EMPRESA {
 				Utilidades Util = new Utilidades();
 				Gestionfichero GF = new Gestionfichero();
 				ArrayList<Oficial> FicheroOficial = new ArrayList<Oficial>();
-				nombreFichero = JOptionPane.showInputDialog("Escribe el Nombre de el fichero de Directivo");
+				nombreFichero = JOptionPane.showInputDialog("Escribe el Nombre de el fichero del Oficial");
 				Util.AltaOficial(nombreFichero);
 				FicheroOficial = GF.leerFicheroOficial(nombreFichero);
 				Util.printarOficial(FicheroOficial);
