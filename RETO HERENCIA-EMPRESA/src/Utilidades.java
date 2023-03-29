@@ -36,7 +36,7 @@ public class Utilidades {
 	public Tecnico pedirDatosTecnico() {
 		Tecnico tecnico = new Tecnico();
 		tecnico.setDNI(JOptionPane.showInputDialog("Escribe el DNI de el tecnico"));
-		tecnico.setEspecialidad(JOptionPane.showInputDialog("Escribe el Especialidad de el tecnico"));
+		tecnico.setEspecialidad(JOptionPane.showInputDialog("Escribe la Especialidad de el tecnico"));
 		tecnico.setNombre(JOptionPane.showInputDialog("Escribe el Nombre de el tecnico"));
 		tecnico.setNumobra(Integer.parseInt(JOptionPane.showInputDialog("Escribe el Numero de obra de el tecnico")));
 		tecnico.setSalario(Double.parseDouble(JOptionPane.showInputDialog("Escribe el Salario de el tecnico")));
