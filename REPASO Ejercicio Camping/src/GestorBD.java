@@ -2,6 +2,8 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
+
 import javax.swing.JOptionPane;
 
 public class GestorBD {
@@ -51,6 +53,15 @@ public class GestorBD {
 	}
 	
 	public ResultSet maxPlaza() {
-		
+		ResultSet rs = null;
+		String SQL = "SELECT MAX(`Plaza`) FROM `camping`";
+		try {
+			Statement st = dasv.prepareStatement(SQL);
+			rs = st.executeQuery(SQL);
+		} catch (SQLException e) {
+			// TODO: handle exception
+			System.out.println("Error(es) detectados: " + e.getMessage());
+		}
+		return rs;
 	}
 }
